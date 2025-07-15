@@ -15,7 +15,16 @@
   </style>
 </head>
 <body class="bg-pink-300 min-h-screen flex flex-col justify-between items-center relative text-center">
+  <!--Musica-->
+<audio id="musica" loop>
+  <source src="assets/YABABAINA.mp3" type="audio/mpeg">
+</audio>
 
+<script>
+  window.addEventListener('click', () => {
+    document.getElementById('musica').play();
+  }, { once: true });
+</script>
   <!-- Header -->
   <header class="mt-8 z-10">
     <h1 class="text-black text-2xl font-bold">Recopilatorio de Fotos</h1>
