@@ -5,23 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Den</title>
+  <style>
+    body {
+      background-image: url('assets/fondo.avif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
 </head>
 <body class="bg-pink-300 min-h-screen flex flex-col justify-between items-center relative text-center">
 
   <!-- Header -->
-  <header class="mt-8">
-    <h1 class="text-black text-2xl font-bold">DEN</h1>
-    <p class="text-black">No sé qué poner acá</p>
+  <header class="mt-8 z-10">
+    <h1 class="text-black text-2xl font-bold">Recopilatorio de Fotos</h1>
+    <p class="text-black">Te quiero mucho Den</p>
   </header>
 
   <!-- Carrusel -->
-  <main class="flex flex-col items-center justify-center w-full flex-grow">
+  <main class="flex flex-col items-center justify-center w-full flex-grow z-10">
     <div class="relative w-full max-w-md overflow-hidden rounded-xl">
       <!-- Slides -->
       <div class="carousel flex transition-transform duration-500 ease-in-out" id="carousel">
-        <img src="assets\imagen3.png" class="w-full flex-shrink-0" alt="Imagen 1" />
-        <img src="assets\imagen2.png" class="w-full flex-shrink-0" alt="Imagen 2" />
-        <img src="assets\imagen1.jpg" class="w-full flex-shrink-0" alt="Imagen 3" />
+        <img src="assets/imagen3.png" class="w-full flex-shrink-0" alt="Imagen 1" />
+        <img src="assets/imagen2.png" class="w-full flex-shrink-0" alt="Imagen 2" />
+        <img src="assets/imagen1.jpg" class="w-full flex-shrink-0" alt="Imagen 3" />
+        <img src="assets/imagen4.png" class="w-full flex-shrink-0" alt="Imagen 4" />
       </div>
       <!-- Botones -->
       <div class="absolute inset-0 flex items-center justify-between px-4">
@@ -32,12 +41,12 @@
   </main>
 
   <!-- Footer -->
-  <footer class="mb-8 text-sm text-black">
+  <footer class="mb-8 text-sm text-black z-10">
     Hecho con cariño por Solidus para Den
   </footer>
 
   <!-- Botón de X -->
-  <div class="absolute bottom-20">
+  <div class="absolute bottom-20 z-10">
     <a class="bg-black p-2 size-12 flex items-center justify-center rounded-full hover:scale-105 transition-transform"
       href="https://x.com/DENinthemiddle" target="_blank" aria-label="X" title="Ir a X de Den">
       <svg width="28" height="28">
@@ -47,7 +56,7 @@
   </div>
 
   <!-- Imagen de personaje -->
-  <img src="./assets/den personaje.png" alt="Den personaje" class="absolute bottom-0 right-0 max-w-[200px]">
+  <img src="./assets/den personaje.png" alt="Den personaje" class="fixed bottom-0 right-0 w-28 h-40 p-4 z-10">
 
   <!-- Script carrusel -->
   <script>
